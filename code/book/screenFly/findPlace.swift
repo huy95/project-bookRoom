@@ -16,10 +16,21 @@ class findPlace: UIViewController {
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.addSubview(view1)
+        let cancelButton = UIBarButtonItem(barButtonSystemItem: .close, target: self, action: #selector(cancelPress))
+               navigationItem.leftBarButtonItem = cancelButton
+        let rootViewController = navigationController!.viewControllers.first
+        
+        
+        view1.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        view1.bottomAnchor.constraint(equalTo: view.topAnchor, constant: 220).isActive = true
+        view1.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 0).isActive = true
+        view1.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
         // Do any additional setup after loading the view.
     }
-    
+    @objc func cancelPress(){
+        dismiss(animated: true, completion: nil)
+    }
 
     /*
     // MARK: - Navigation

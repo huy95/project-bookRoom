@@ -87,9 +87,11 @@ class Fly: UIViewController {
             
             @objc func Goto(){
                 let secondVC = findPlace()
-                let navigation = UINavigationController(rootViewController: secondVC)
-                navigation.modalPresentationStyle = .fullScreen
-                present(navigation, animated: true, completion: nil)
+                secondVC.hidesBottomBarWhenPushed = true
+                navigationController?.pushViewController(secondVC, animated: true)
+
+
+               
             }
         func setupLayout(){
             maiview.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
@@ -130,14 +132,7 @@ class Fly: UIViewController {
         }
         
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
+    
 
 }
