@@ -210,20 +210,20 @@ class Home21: UIViewController {
         self.navigationController!.navigationBar.shadowImage = UIImage()
         self.navigationController!.navigationBar.isTranslucent = true
     }
-    
+
     // khi view sắp sửa bị ẩn thì set lại thuộc tính isTranslucent = false để các navigationBar trước đó không bị ảnh hưởng
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         self.navigationController!.navigationBar.isTranslucent = false
-        
+
     }
     func setupLayout(){
         view.addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        //        imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.1).isActive = true
+
         imageView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
     }
-    //
+    
 }

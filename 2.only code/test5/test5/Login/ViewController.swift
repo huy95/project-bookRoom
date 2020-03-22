@@ -34,6 +34,7 @@ class ViewController: UIViewController {
         Label1.textColor = UIColor.init(named: "xanhdam")
         Label1.textAlignment = .center
         Label1.font = .boldSystemFont(ofSize: 90)
+        Label1.alpha = 0.7
         return Label1
     }()
     let Loginmk : UITextField = {
@@ -93,7 +94,7 @@ class ViewController: UIViewController {
     }
     func setup(){
         view.addSubview(imageCT)
-        imageCT.alpha = 0.7
+//        imageCT.alpha = 0.7
         imageCT.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
         imageCT.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
         imageCT.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 0).isActive = true
@@ -133,6 +134,7 @@ class ViewController: UIViewController {
         buttonForget.heightAnchor.constraint(equalToConstant: 20).isActive = true
         buttonForget.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 0).isActive = true
         buttonForget.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.4).isActive = true
+        buttonForget.addTarget(self, action: #selector(register), for: .touchUpInside)
         
         view.addSubview(LabelWh)
         LabelWh.topAnchor.constraint(equalTo: buttonForget.bottomAnchor, constant: 10).isActive = true
@@ -145,6 +147,7 @@ class ViewController: UIViewController {
         buttonRes.heightAnchor.constraint(equalToConstant: 20).isActive = true
         buttonRes.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.5).isActive = true
         buttonRes.leftAnchor.constraint(equalTo: LabelWh.rightAnchor, constant: -20).isActive = true
+        buttonRes.addTarget(self, action: #selector(register), for: .touchUpInside)
         
         
         
@@ -159,6 +162,18 @@ class ViewController: UIViewController {
         secondVC.modalPresentationStyle = .fullScreen
         present(secondVC, animated: true, completion: nil)
         
+    }
+    @objc func register(){
+        let secondVC = TabbarCT()
+        
+        secondVC.modalPresentationStyle = .fullScreen
+        present(secondVC, animated: true, completion: nil)
+    }
+    @objc func forgetPa(){
+        let secondVC = TabbarCT()
+        
+        secondVC.modalPresentationStyle = .fullScreen
+        present(secondVC, animated: true, completion: nil)
     }
     
 }

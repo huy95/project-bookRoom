@@ -1,20 +1,19 @@
 //
-//  Fly33.swift
+//  Home25.swift
 //  test5
 //
-//  Created by Huy on 3/19/20.
+//  Created by Huy on 3/21/20.
 //  Copyright © 2020 Huy. All rights reserved.
 //
 
 import UIKit
 
-class Fly33: UIViewController {
+class Home25: UIViewController {
 
-    @IBOutlet weak var viewnext: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        viewnext.layer.cornerRadius = 5
+        // Do any additional setup after loading the view.
     }
 
 

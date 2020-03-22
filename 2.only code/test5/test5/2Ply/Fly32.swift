@@ -125,10 +125,8 @@ extension Fly32 : UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        let zoomVC = Fly33()
-        //khi chuyen man hinh se ko co navigation
-        zoomVC.modalPresentationStyle = .fullScreen
-        present(zoomVC, animated: true, completion: nil)
+        let next33 = Fly33()
+        present(next33, animated: true, completion: nil)
     }
+    
 }

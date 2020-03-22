@@ -30,10 +30,14 @@
 		E52DE6C7241AC76A006850CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E52DE6C6241AC76A006850CD /* Assets.xcassets */; };
 		E52DE6CA241AC76A006850CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E52DE6C8241AC76A006850CD /* LaunchScreen.storyboard */; };
 		E52DE6D2241AC781006850CD /* TabbarCT.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DE6D1241AC781006850CD /* TabbarCT.swift */; };
+		E55EE60F2427625700E19AA7 /* Resgister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EE60E2427625700E19AA7 /* Resgister.swift */; };
+		E55EE6122427627100E19AA7 /* forgetPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E55EE6112427627100E19AA7 /* forgetPass.swift */; };
 		E5B6856624232B0F0083F4FA /* cellPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6856424232B0F0083F4FA /* cellPlace.swift */; };
 		E5B6856724232B0F0083F4FA /* cellPlace.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B6856524232B0F0083F4FA /* cellPlace.xib */; };
 		E5B6856A24232DE30083F4FA /* Home26.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B6856824232DE30083F4FA /* Home26.swift */; };
 		E5B6856B24232DE30083F4FA /* Home26.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5B6856924232DE30083F4FA /* Home26.xib */; };
+		E5C8ED7C24261754002586B7 /* Home25.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5C8ED7A24261754002586B7 /* Home25.swift */; };
+		E5C8ED7D24261754002586B7 /* Home25.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5C8ED7B24261754002586B7 /* Home25.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,10 +66,14 @@
 		E52DE6C9241AC76A006850CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E52DE6CB241AC76A006850CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E52DE6D1241AC781006850CD /* TabbarCT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarCT.swift; sourceTree = "<group>"; };
+		E55EE60E2427625700E19AA7 /* Resgister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resgister.swift; sourceTree = "<group>"; };
+		E55EE6112427627100E19AA7 /* forgetPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = forgetPass.swift; sourceTree = "<group>"; };
 		E5B6856424232B0F0083F4FA /* cellPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cellPlace.swift; sourceTree = "<group>"; };
 		E5B6856524232B0F0083F4FA /* cellPlace.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = cellPlace.xib; sourceTree = "<group>"; };
 		E5B6856824232DE30083F4FA /* Home26.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home26.swift; sourceTree = "<group>"; };
 		E5B6856924232DE30083F4FA /* Home26.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home26.xib; sourceTree = "<group>"; };
+		E5C8ED7A24261754002586B7 /* Home25.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home25.swift; sourceTree = "<group>"; };
+		E5C8ED7B24261754002586B7 /* Home25.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home25.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +93,8 @@
 				E508BFE224225B8F004A4636 /* Home21.swift */,
 				E508BFE42422635A004A4636 /* Home22.swift */,
 				E508C01B2422D72A004A4636 /* Home24.swift */,
+				E5C8ED7A24261754002586B7 /* Home25.swift */,
+				E5C8ED7B24261754002586B7 /* Home25.xib */,
 				E5B6856824232DE30083F4FA /* Home26.swift */,
 				E5B6856924232DE30083F4FA /* Home26.xib */,
 				E508C0112422D160004A4636 /* cellHome */,
@@ -129,6 +139,8 @@
 		E508C00624229C3F004A4636 /* sp */ = {
 			isa = PBXGroup;
 			children = (
+				E52DE6BD241AC769006850CD /* AppDelegate.swift */,
+				E52DE6BF241AC769006850CD /* SceneDelegate.swift */,
 			);
 			path = sp;
 			sourceTree = "<group>";
@@ -161,10 +173,7 @@
 		E52DE6BC241AC769006850CD /* test5 */ = {
 			isa = PBXGroup;
 			children = (
-				E52DE6BD241AC769006850CD /* AppDelegate.swift */,
-				E52DE6BF241AC769006850CD /* SceneDelegate.swift */,
-				E52DE6C1241AC769006850CD /* ViewController.swift */,
-				E52DE6D1241AC781006850CD /* TabbarCT.swift */,
+				E55EE60D2427623A00E19AA7 /* Login */,
 				E508BFD324225AEB004A4636 /* 4Me */,
 				E508BFD224225AD2004A4636 /* 3Order */,
 				E508BFD124225ABF004A4636 /* 2Ply */,
@@ -175,6 +184,17 @@
 				E52DE6CB241AC76A006850CD /* Info.plist */,
 			);
 			path = test5;
+			sourceTree = "<group>";
+		};
+		E55EE60D2427623A00E19AA7 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E52DE6C1241AC769006850CD /* ViewController.swift */,
+				E55EE60E2427625700E19AA7 /* Resgister.swift */,
+				E55EE6112427627100E19AA7 /* forgetPass.swift */,
+				E52DE6D1241AC781006850CD /* TabbarCT.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E5B6856324232AF20083F4FA /* cell */ = {
@@ -247,6 +267,7 @@
 				E52DE6CA241AC76A006850CD /* LaunchScreen.storyboard in Resources */,
 				E508BFE124225B73004A4636 /* Fly31.xib in Resources */,
 				E508C0102422B108004A4636 /* Fly32.xib in Resources */,
+				E5C8ED7D24261754002586B7 /* Home25.xib in Resources */,
 				E508BFDD24225B52004A4636 /* Order4.xib in Resources */,
 				E52DE6C7241AC76A006850CD /* Assets.xcassets in Resources */,
 				E52DE6C5241AC769006850CD /* Main.storyboard in Resources */,
@@ -275,11 +296,14 @@
 				E508BFE024225B73004A4636 /* Fly31.swift in Sources */,
 				E5B6856A24232DE30083F4FA /* Home26.swift in Sources */,
 				E5B6856624232B0F0083F4FA /* cellPlace.swift in Sources */,
+				E55EE6122427627100E19AA7 /* forgetPass.swift in Sources */,
 				E508BFD824225B3D004A4636 /* Me5.swift in Sources */,
 				E52DE6C0241AC769006850CD /* SceneDelegate.swift in Sources */,
 				E508C01C2422D72A004A4636 /* Home24.swift in Sources */,
 				E508C00B2422B0F6004A4636 /* Fly33.swift in Sources */,
+				E5C8ED7C24261754002586B7 /* Home25.swift in Sources */,
 				E508C00F2422B108004A4636 /* Fly32.swift in Sources */,
+				E55EE60F2427625700E19AA7 /* Resgister.swift in Sources */,
 				E508BFDC24225B52004A4636 /* Order4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

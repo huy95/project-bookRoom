@@ -22,7 +22,17 @@ class tablecellPhong: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    @IBAction func nextScreen(_ sender: Any) {
-       
-    }
+//    @IBAction func nextScreen(_ sender: Any) {
+//       let next25 = Home25()
+//        let navi25 = UINavigationController(rootViewController: next25)
+//        navi25.modalPresentationStyle = .fullScreen
+////        self.present(navi25, animated: true, completion: nil)
+//    }
+
+//    @IBAction func nextscreen(_ sender: Any) {
+//        let next25 = Home25()
+//        let navi25 = UINavigationController(rootViewController: next25)
+//        navi25.modalPresentationStyle = .fullScreen
+//        self.present(navi25, animated: true, completion: nil)
+//    }
 }

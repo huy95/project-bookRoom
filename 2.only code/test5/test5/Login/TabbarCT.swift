@@ -17,12 +17,15 @@ class TabbarCT: UITabBarController {
     var subViewController : [UIViewController] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        home21.tabBarItem = UITabBarItem(title: "Phòng", image: UIImage(named: "phongmau"), selectedImage: UIImage(named: "phong"))
-        let navigation1 = UINavigationController(rootViewController: home21)
-        home21.tabBarItem.tag = 0
+//        home21.tabBarItem = UITabBarItem(title: "Phòng", image: UIImage(named: "phongmau"), selectedImage: UIImage(named: "phong"))
+//        let navigation1 = UINavigationController(rootViewController: home21)
+//        home21.tabBarItem.tag = 0
 //        home21.tabBarItem = UITabBarItem(title: "Phòng", image: UIImage(named: ""), selectedImage: UIImage(named: "phongmau"))
 //        let navigation1 = UINavigationController(rootViewController: home21)
 //        home21.tabBarItem.tag = 0
+        home21.tabBarItem = UITabBarItem(title: "Phòng", image: UIImage(named: "Phongmoi"), selectedImage: UIImage(named: "Phongsua"))
+        let navigation1 = UINavigationController(rootViewController: home21)
+               fly31.tabBarItem.tag = 0
         //fly31
         fly31.tabBarItem = UITabBarItem(title: "Chuyến bay", image: UIImage(named: "baymau"), selectedImage: UIImage(named: "bay"))
         let navigation2 = UINavigationController(rootViewController: fly31)

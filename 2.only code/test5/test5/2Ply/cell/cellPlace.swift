@@ -10,10 +10,11 @@ import UIKit
 
 class cellPlace: UITableViewCell {
 
-    @IBOutlet weak var viewcheck: UIView!
+    @IBOutlet weak var viewBor: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        viewcheck.layer.cornerRadius = 5
+        viewBor.layer.cornerRadius = 5
         
     }
 

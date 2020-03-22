@@ -207,4 +207,8 @@ extension Home22: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellPhong", for: indexPath) as! tablecellPhong
         return cell
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let next25 = Home25()
+        present(next25, animated: true, completion: nil)
+    }
 }
